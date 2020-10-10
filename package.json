@@ -1,0 +1,24 @@
+{
+  "name": "your-first-open-source-contribution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owais4321/Your-First-Open-Source-Contribution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owais4321/Your-First-Open-Source-Contribution/issues"
+  },
+  "homepage": "https://github.com/owais4321/Your-First-Open-Source-Contribution#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}

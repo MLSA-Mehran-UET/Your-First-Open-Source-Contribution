@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+/*	general	*/
+
+section{
+    padding: 50px 0;
+}
+
+/*	gallery */
+
+.gallery-title{
+    font-size: 36px;
+    color: #3F6184;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.filter-button{
+    font-size: 18px;
+    border: 2px solid #3F6184;
+	padding:5px 10px;
+    text-align: center;
+    color: #3F6184;
+    margin-bottom: 30px;
+	background:transparent;
+}
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active{
+    color: #ffffff;
+    background-color:#3F6184;
+	outline:none;
+}
+.gallery_product{
+    margin: 0px;
+	padding:0;
+	position:relative;
+}
+.gallery_product .img-info{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+	overflow:hidden;
+	color:#fff;
+	top:0;
+	display:none;
+	   -webkit-transition: 2s;
+    transition: 2s;
+}
+
+.gallery_product:hover .img-info{
+	display:block;
+   -webkit-transition: 2s;
+    transition: 2s;
+}
+/*	end gallery */
+</style>
+</head>
+<body>
+    <section class="portfolio" id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="gallery-title">MLSA Your First Open Source Contribution</h1>
+                    <p><center style="margin:0%;padding:0%; font-size:23px">This is the initiative created by Microsoft Learn Student Ambassador MUET Jamshoro community for the anyone new to open source we are here providing you an opportunity create your first contribution with ease so that you start your journey in open source pleasantly</center></p>
+                </div>
+    
+                <div align="center">
+                    <button class="filter-button" data-filter="all">All</button>
+                    <button class="filter-button" data-filter="category1">Contributors</button>
+                    <button class="filter-button" data-filter="category2">Projects</button>
+                    <button class="filter-button" data-filter="category3">Founders</button>
+                </div>                
+                <br/>
+                <% members.contributors.map((mem)=>{ %>
+                <div class="gallery_product col-sm-3 col-xs-6 filter category1">
+                    <a class="fancybox" rel="ligthbox" href=<%= mem.imgURL %> >
+                        <img class="img-responsive" alt="" src=<%= mem.imgURL %> />
+                        <div class='img-info'>
+                            <h4><%= mem.Name %></h4>
+                            <p><%= mem.Description %></p>
+                        </div>
+                    </a>
+                </div>
+    <%}) %>
+            </div>
+        </div>
+    </section>
+    
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script> -->
+        <script>
+            /*	gallery */
+$(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        $('.filter').show('1000');
+    }
+    else
+    {
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+
+            if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+        }
+            $(this).addClass("active");
+        });
+});
+/*	end gallery */
+
+$(document).ready(function(){
+$(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
+});
+});
+        </script>
+        
+</body>
+</html>
