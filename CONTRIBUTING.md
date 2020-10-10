@@ -1,15 +1,3 @@
-<h2 style="text-align: center;"> <a href="https://mlsacontributor.herokuapp.com/" target="_blank">MLSA MUET Student Club Contributors</a></h2>
-
-### A web page that shows details of all the contributors, projects and owners for MLSA Student Club Open Source Community
-
-## First Contribution
-
-- Are you new to open source project?
-- Do you want to make open source contribution?
-- Can't find a beginner's project to contribute
-
-Don't worry you are at perfect place. This is simple project you just have to add yourself as contributor by adding your name in `contributors.json` file. Still can't get it don't worry below is step by step guide to help you make your first contribution.
-
 ## How to contribute
 
 Here you will learn how you can contribute to this project and can make your first contribution
@@ -67,11 +55,3 @@ name of branch is same as you created in `step 3`
 ## Submit your changes for review
 
 Once you have pushed your code to GitHub, now it's time to create `pull request`, you will go to the repository click on `compare and pull request` and submit the pull request.
-
-Soon, we will be merging all your pull requests to the main branch of project and you will also get notification once your pull request is merged with existing code base. After that you will be able to see your details in contributor section on the page below
-
-### [MLSA Student Club Contributor]("https://mlsacontributor.herokuapp.com/")
-
-## Contributors ✨
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
