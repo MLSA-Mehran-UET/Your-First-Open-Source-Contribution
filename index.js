@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 //connection to server
 
-app.listen(process.env.PORT||3000, error => {
+app.listen(process.env.PORT, error => {
     if (error) console.log("error is " + error);
     else console.log("listening to port " + 3000);
 
