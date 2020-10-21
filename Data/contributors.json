@@ -4,17 +4,22 @@
         "imgURL":"https://avatars3.githubusercontent.com/u/39921596?s=460&u=49d6f0b56fcbaeb1a28add319a295231099f0766&v=4",
         "Description":"Hello I am Owais, I am Software Engineer"
         },
-        {"Name":"Owais",
-        "imgURL":"https://avatars3.githubusercontent.com/u/39921596?s=460&u=49d6f0b56fcbaeb1a28add319a295231099f0766&v=4",
-        "Description":"Hello I am Owais, I am Software Engineer"
+        {"Name":"Milton",
+        "imgURL":"https://avatars2.githubusercontent.com/u/55441239?s=460&u=d5767f8bdd99f1aa8d7e0dc3544af929c47d978f",
+        "Description":"Novice Programmer, Learning App Development, Playing around with Python. Studying Software Engineering at MUET, Jamshoro."
         },
         {"Name":"Waqar Ali Siyal",
         "imgURL":"https://avatars3.githubusercontent.com/u/49365563?s=460&u=55a9148ae211fea83c326a66fdadbde816263a3f&v=4",
         "Description":"Microsoft Student Ambassador | Software Engineering Student at Mehran UET | Mobile App Developer"
         },
+
         {"Name":"Rahul Rai",
             "imgURL":"https://avatars0.githubusercontent.com/u/59458151?s=460&u=d45d89ec751d59689b229dcd90c38e55e13f53ee&v=4",
             "Description":"Telecommunication Engineering Student at Mehran UET | Web App Developer"
+        },      
+        {"Name":"Isra Khan",
+        "imgURL":"https://avatars3.githubusercontent.com/u/47556456?s=400&u=3b98d5bf88af15a42a6d9912e7d113209991d657&v=4",
+        "Description":"Hi I am Isra khan, Computer Science Student at University of Sindh"
         }
 
         ]
